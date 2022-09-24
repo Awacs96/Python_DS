@@ -1,1 +1,1 @@
-# Linked and Doubly Linked List
+# Linked List
