@@ -19,14 +19,26 @@ class LinkedList:
         
         itr.next = node
     
+    # Next steps:
+    # remove from certain index
+    # remove certain value
+    # get length of the list
+    # insert on certain position
+    # 
+    
     def print_list(self):
         itr = self.head
+        lst = ""
 
         while itr:
-            print(itr.value)
+            lst += str(itr.value)
+            lst += " -> "
             itr = itr.next
-    
+
+        lst = lst[:-4]
+        print(lst)
 
 ll = LinkedList(Node(3))
 ll.append(Node(4))
+ll.append(Node(5))
 ll.print_list()
