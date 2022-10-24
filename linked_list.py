@@ -1,44 +1,46 @@
-# Linked List
+# Single Linked List - implementation
 
 class Node:
     
-    def __init__(self, value):
+    def __init__(self, value=0):
         self.value = value
         self.next = None
 
 class LinkedList:
 
-    def __init__(self, node):
-        self.head = node
+    def __init__(self):
+        self.head = Node()
     
-    def append(self, node):
-        itr = self.head
+    def append(self):
+        pass
 
-        while itr.next:
-            itr = itr.next
+    def push(self):
+        pass
+
+    def insertBefore(self, value):
+        pass
+
+    def insertAfter(self, value):
+        pass
+
+    def display(self):
+        pass
+
+    def removeFirst(self):
+        pass
+
+    def removeLast(self):
+        pass
+
+    def removeValue(self, all=False):
+        pass
+
+    def removeAt(self, index):
+        pass
+
+    def changeValue(self, all=False):
+        pass
+
+    def changeNodeAtIndex(self, index):
+        pass
         
-        itr.next = node
-    
-    # Next steps:
-    # remove from certain index
-    # remove certain value
-    # get length of the list
-    # insert on certain position
-    # 
-    
-    def print_list(self):
-        itr = self.head
-        lst = ""
-
-        while itr:
-            lst += str(itr.value)
-            lst += " -> "
-            itr = itr.next
-
-        lst = lst[:-4]
-        print(lst)
-
-ll = LinkedList(Node(3))
-ll.append(Node(4))
-ll.append(Node(5))
-ll.print_list()
